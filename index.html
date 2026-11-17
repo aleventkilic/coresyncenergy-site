@@ -4,34 +4,101 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Core Sync Energy Global Consulting</title>
-<meta name="description" content="Expert energy consulting for oil and gas operations worldwide.">
+<meta name="description" content="Operations, process and capital project consulting for oil and gas and critical facilities. Based in Loudoun County, Virginia.">
 <style>
-body{margin:0;font-family:Georgia,serif;background:#0b1220;color:#e8edf5;line-height:1.6}
-header{padding:96px 24px;text-align:center;background:linear-gradient(135deg,#0b1220,#16294a)}
-h1{margin:0 0 12px;font-size:2.2rem;letter-spacing:.08em;text-transform:uppercase}
-header p{margin:0;font-size:1.3rem;color:#9db4d8}
-main{max-width:960px;margin:0 auto;padding:48px 24px}
-h2{margin-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
-.card{background:#111c33;padding:24px;border-radius:8px}
-.card h3{margin-top:0}
-footer{padding:32px 24px;text-align:center;color:#7c8ba5;font-size:.9rem}
+:root{--navy:#0b1220;--panel:#111c33;--line:#22345a;--text:#e8edf5;--muted:#9db4d8;--accent:#f2a93b}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--navy);color:var(--text);line-height:1.65}
+a{color:var(--accent)}
+nav{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;padding:14px 24px;background:rgba(11,18,32,.96);border-bottom:1px solid var(--line)}
+nav .brand{font-weight:bold;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem;color:var(--text);text-decoration:none}
+nav .links a{margin-left:20px;color:var(--muted);text-decoration:none;font-size:.95rem}
+nav .links a:hover{color:var(--accent)}
+.hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:96px 24px;background:linear-gradient(rgba(11,18,32,.62),rgba(11,18,32,.88)),url("https://images.pexels.com/photos/15973758/pexels-photo-15973758.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover}
+.hero h1{margin:0 0 12px;font-size:clamp(1.8rem,5vw,3rem);letter-spacing:.08em;text-transform:uppercase}
+.hero .tag{margin:0 0 20px;font-size:1.3rem;color:var(--accent)}
+.hero .sub{max-width:640px;margin:0 auto 28px;color:var(--muted);font-size:1.1rem}
+.btn{display:inline-block;padding:12px 28px;background:var(--accent);color:#1a1205;text-decoration:none;font-weight:bold;border-radius:4px}
+section{max-width:1040px;margin:0 auto;padding:64px 24px}
+h2{margin:0 0 8px;font-size:1.8rem}
+.lead{margin:0 0 32px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:8px}
+.card h3{margin:0 0 8px;font-size:1.1rem;color:var(--accent)}
+.card p{margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;margin-bottom:48px}
+.split.flip .pic{order:2}
+.split img{width:100%;height:320px;object-fit:cover;border-radius:8px;display:block}
+.split h3{margin:0 0 8px;font-size:1.4rem}
+.split p{margin:0 0 12px}
+.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.contact{text-align:center}
+.contact .mail{font-size:1.4rem}
+footer{padding:32px 24px;text-align:center;color:#7c8ba5;font-size:.85rem}
+@media(max-width:720px){.split{grid-template-columns:1fr}.split.flip .pic{order:0}nav .links a{margin:0 14px 0 0}}
 </style>
 </head>
 <body>
-<header>
+<nav>
+<a class="brand" href="#top">Core Sync Energy</a>
+<div class="links"><a href="#services">Services</a><a href="#industries">Industries</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</nav>
+<header class="hero" id="top">
+<div>
 <h1>Core Sync Energy Global Consulting</h1>
-<p>Syncing Energy Solutions Globally</p>
-</header>
-<main>
-<h2>Oil and Gas Consulting Solutions</h2>
-<p>Expert energy consulting for oil and gas operations worldwide.</p>
-<div class="grid">
-<div class="card"><h3>Operational Strategy</h3><p>Improve performance with practical strategies tailored to your oil and gas operations.</p></div>
-<div class="card"><h3>Supply Chain Insights</h3><p>Strengthen procurement and logistics with clear analysis and industry expertise.</p></div>
-<div class="card"><h3>Energy Market Advisory</h3><p>Navigate market shifts with informed guidance for confident business decisions.</p></div>
+<p class="tag">Syncing Energy Solutions Globally</p>
+<p class="sub">Operations, process and capital project consulting for oil and gas and critical facilities. Based in Loudoun County, Virginia.</p>
+<a class="btn" href="#contact">Get in touch</a>
 </div>
-</main>
-<footer>&copy; 2026 Core Sync Energy Global Consulting. All rights reserved.</footer>
+</header>
+<section id="services">
+<h2>What I do</h2>
+<p class="lead">Hands-on consulting for operators and small teams who want their processes written down, measured and working.</p>
+<div class="grid">
+<div class="card"><h3>Process and SOP updates</h3><p>I rewrite SOPs and tighten the processes behind them, with the people who run them every day.</p></div>
+<div class="card"><h3>Dashboards and data tools</h3><p>Power BI, GIS and Smartsheet dashboards that turn operating data into something a supervisor can act on.</p></div>
+<div class="card"><h3>AI for small teams</h3><p>I introduce oil and gas and safety companies to AI tools and set them up on real work, like SOP drafting and reporting.</p></div>
+<div class="card"><h3>Operations and capital projects</h3><p>Planning, execution and handover support for capital projects, drawn from offshore commissioning and pipeline and terminal operations.</p></div>
+</div>
+</section>
+<div class="band">
+<section id="industries">
+<h2>Industries</h2>
+<p class="lead">Two sectors, one operating discipline.</p>
+<div class="split">
+<div class="pic"><img src="https://images.pexels.com/photos/10407692/pexels-photo-10407692.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Aerial view of an oil refinery at sunset" loading="lazy"></div>
+<div>
+<h3>Oil and gas</h3>
+<p>20+ years upstream and midstream. Offshore platform commissioning in the Caspian region, pipeline and terminal operations, and capital portfolio and regulatory work at a major US pipeline.</p>
+<p>I've worked the field side and the office side, so I know where a procedure holds up and where it falls apart.</p>
+</div>
+</div>
+<div class="split flip">
+<div class="pic"><img src="https://images.pexels.com/photos/4597280/pexels-photo-4597280.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Server racks and cabinets in a modern data center" loading="lazy"></div>
+<div>
+<h3>Data centers and critical facilities</h3>
+<p>Loudoun County is the largest data center market in the world, and it's where I live and work. The skills carry over from energy: 24/7 uptime, asset integrity, change management and regulated environments.</p>
+<p>I'm building this practice across Virginia, Maryland and DC.</p>
+</div>
+</div>
+</section>
+</div>
+<section id="about">
+<h2>About</h2>
+<p>I'm Levent Kilic. I've spent 20+ years in energy infrastructure, from offshore platforms to pipeline terminals and capital portfolios. Core Sync is how I work with operators now: directly, on the problem in front of them.</p>
+<p>Since 2025 I've been working with former customers and a few small oil and gas and safety businesses on SOP updates, process improvement and reporting tools.</p>
+</section>
+<div class="band">
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p class="lead">Tell me what you're working on.</p>
+<p class="mail"><a href="mailto:leventkilic@coresyncenergy.com">leventkilic@coresyncenergy.com</a></p>
+<p>Loudoun County, Virginia</p>
+</section>
+</div>
+<footer>
+<p>&copy; 2026 Core Sync Energy Global Consulting. All rights reserved.</p>
+<p>Photos from <a href="https://www.pexels.com">Pexels</a>: Ganesh Ramsumair and Tom Fisk.</p>
+</footer>
 </body>
 </html>
